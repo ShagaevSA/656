@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ежедневник - Управление задачами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📓 Мой ежедневник</h1>
+            <p>Организуйте свои задачи эффективно</p>
+        </header>
+        
+        <section class="task-form">
+            <h2>Добавить новую задачу</h2>
+            <form id="addTaskForm">
+                <div class="form-group">
+                    <label for="taskTitle" class="required">Название задачи</label>
+                    <input type="text" id="taskTitle" placeholder="Введите название задачи" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskDescription">Описание</label>
+                    <textarea id="taskDescription" placeholder="Добавьте описание (необязательно)"></textarea>
+                </div>
+                
+                <button type="submit">➕ Добавить задачу</button>
+            </form>
+        </section>
+        
+        <section class="tasks-container">
+            <h2>Мои задачи</h2>
+            <div class="task-list" id="taskList">
+                <div class="empty-state" id="emptyState">
+                    <p>🎯 У вас пока нет задач</p>
+                    <p>Добавьте первую задачу с помощью формы выше</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
